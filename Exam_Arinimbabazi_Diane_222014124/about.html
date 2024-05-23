@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Linking to external stylesheet -->
+  <link rel="stylesheet" type="text/css" href="style.css" title="style 1" media="screen, tv, projection, handheld, print"/>
+  <!-- Defining character encoding -->
+  <meta charset="utf-8">
+  <!-- Setting viewport for responsive design -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About Page</title>
+  <style>
+    /* CSS styles for the page */
+    /* Body style */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Times New Roman', serif;
+      background: url('./Images/clinic.jpg') no-repeat center center/cover;
+      height: 100vh;
+    }
+    /* Link styles */
+    a {
+      padding: 10px;
+      color: white;
+      text-decoration: none;
+      margin-right: 15px;
+    }
+    a:visited {
+      color: black;
+    }
+    a:link {
+      color: black;
+    }
+    a:hover {
+      background-color: white;
+    }
+    a:active {
+      background-color: beige;
+    }
+    /* Button style */
+    button.btn {
+      margin-left: 15px;
+      margin-top: 4px;
+    }
+    /* Form input style */
+    input.form-control {
+      margin-left: 15px;
+      padding: 8px;
+    }
+    /* Section style */
+    section {
+      padding: 71px;
+      border-bottom: 1px solid #ddd;
+    }
+    /* Footer style */
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: beige;
+    }
+    /* Header style */
+    header {
+      background-color: beige;
+      padding: 10px;
+      text-align: center;
+    }
+    /* Navigation menu style */
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      align-items: center;
+    }
+    li {
+      margin-right: 10px;
+    }
+    li img {
+      vertical-align: middle;
+    }
+    /* Dropdown menu style */
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px black(0,0,0,0.2);
+      z-index: 1;
+    }
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    .dropdown-content a:hover {
+      background-color: #f1f1f1;
+    }
+  </style>
+</head>
+<body style="background-image: url('./Images/ab.jpg');background-repeat: no-repeat;background-size:cover;">
+  <!-- Header section -->
+  <header>
+    <h1>ABOUT</h1>
+  </header>
+  <!-- Search form -->
+  <form class="d-flex" role="search" action="search.php">
+    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="query">
+    <button class="btn btn-outline-success" type="submit">Search</button>
+  </form>
+  <!-- Navigation menu -->
+  <ul>
+    <img src="./Images/logo.png" width="90" height="60" alt="Logo">
+    <li><a href="./home.html">HOME</a></li>
+    <li><a href="./about.html">ABOUT</a></li>
+    <li><a href="./contact.html">CONTACT</a></li>
+    <!-- Dropdown menu for tables -->
+    <li class="dropdown">
+      <a href="#" style="padding: 20px; color: white; background-color:black; text-decoration: none;">Tables</a>
+      <div class="dropdown-content">
+        <a href="./attachments.php">Attachments</a>
+        <a href="./business_plans.php">business_plans</a>
+        <a href="./collaborators.php">Collaborators</a>
+        <a href="./comments.php">Comments </a>
+        <a href="./feedback.php">Feedback</a>
+        <a href="./goals.php">Goals</a>
+        <a href="./sections.php">Sections</a>
+        <a href="./tasks.php">Tasks </a>
+        <a href="./templates.php">Templates</a>
+      </div>
+    </li>
+    <!-- Dropdown menu for settings -->
+    <li class="dropdown">
+      <a href="#" style="padding: 20px; color: white; background-color:black; text-decoration: none;">Settings</a>
+      <div class="dropdown-content">
+        <a href="login.html">Login</a>
+        <a href="register.html">Register</a>
+        <a href="logout.php">Logout</a>
+      </div>
+    </li>
+  </ul>
+
+  <!-- Section for mission and activities -->
+  <section style=" color: pink;">
+    <h2 style="color: blue;"><strong><u> Our Mission </u></strong></h2>
+    <ul>
+      <!-- Mission statements -->
+      <li><h3 style="color: black;">Assist users in creating comprehensive and effective business plans</h3></li>
+      <li><h3 style="color: black;">Simplify the process by providing step-by-step guidance</h3></li>
+      <li><h3 style="color: black;">Ensure that all necessary information is included</h3></li>
+      <li><h3 style="color: black;">Conduct market analysis</h3></li>
+      <li><h3 style="color: black;">Develop financial projections</h3></li>
+      <li><h3 style="color: black;">Empower entrepreneurs and business owners to articulate their ideas clearly</h3></li>
+    </ul>
+
+    <h2 style="color: blue;"><strong><u> What We Do</u></strong></h2>
+    <ul>
+      <!-- Activities -->
+      <li><h3 style="color: black;">Guided Process</h3></li>
+      <li><h3 style="color: black;">Templates</h3></li>
+      <li><h3 style="color: black;">Customization</h3></li>
+      <li><h3 style="color: black;">Financial Tools</h3></li>
+      <li><h3 style="color: black;">Collaboration</h3></li>
+      <li><h3 style="color: black;">Feedback and Review</h3></li>
+      <li><h3 style="color: black;">Exporting and Sharing</h3></li>
+    </ul>
+  </section>
+
+  <!-- Footer section -->
+  <footer>
+    <center> 
+      <b><h2>UR CBE BIT &copy 2024 Designed by: @Diane ARINIMBABAZI</h2></b>
+    </center>
+  </footer>
+</body>
+</html>
